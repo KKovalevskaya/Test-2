@@ -12,48 +12,59 @@ nav {
     nav a {
       color: #000000;
       text-decoration: none;
-      margin-right: 70px;
+      margin-right: 130px;
+      font-size: 1.5rem;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
     #comment {width:600px; height:200px;}
+    /* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+}
 
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-   margin-bottom: 10px;
+/* Стили для десктопных устройств */
+@media (min-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+}
+
+/* Стили для планшетов */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
   }
 
-  .nav a {
-    flex-basis: 100%;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;
-    box-sizing: border-box;
-    font-size: 1.8rem;
-  }
+}
 
-
-  @media (max-width: 630px) { /* Медиа-запрос для телефонов */
-    .nav a {
-      flex-basis: 50%;
-    }
+/* Стили для смартфонов */
+@media (max-width: 425px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
-
-  @media (min-width: 630px) and (max-width: 1024px) { /* Медиа-запрос для планшетов */
-    .nav a {
-      flex-basis: 45%;
-    }
+   #comment {width:380px; height:100px;}
+}
+@media (max-width: 375px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
-
-  @media (min-width: 1025px) { /* Медиа-запрос для компьютеров */
-    .nav a {
-      flex-basis: auto;
-    }
+   #comment {width:330px; height:100px;}
+}
+@media (max-width: 320px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
-  }
+   #comment {width:280px; height:100px;}
+}
