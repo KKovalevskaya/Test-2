@@ -21,9 +21,6 @@ nav {
     }
     #comment {width:600px; height:200px;}
     /* Общие стили */
-body {
-  font-family: Arial, sans-serif;
-}
 
 /* Стили для десктопных устройств */
 @media (min-width: 768px) {
