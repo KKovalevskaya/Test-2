@@ -1,0 +1,64 @@
+ .active {
+      text-decoration: underline;
+    }
+nav {
+      background-color: #a9bec7;
+      padding: 7px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      margin-right: 130px;
+      font-size: 1.5rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    p {text-align: center;}
+/* Стили для десктопных устройств */
+@media (min-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+}
+
+/* Стили для планшетов */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Стили для смартфонов */
+@media (max-width: 425px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+     width: 100%;
+  }
+ section p img {width: 100%;
+                 height: 100%
+               }
+}
+@media (max-width: 375px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
