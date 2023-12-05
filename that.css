@@ -1,34 +1,59 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
+body { background: url(https://phonoteka.org/uploads/posts/2022-09/1663653980_54-phonoteka-org-p-fon-dlya-prezentatsii-garri-potter-krasivo-60.png); }
+ .active {
+      text-decoration: underline;
+    }
+nav {
+      background-color: #a9bec7;
+      padding: 7px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-h1 {
-  text-align: center;
-}
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      margin-right: 70px;
+    }
 
-p {
-  text-align: center;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
+    #comment {width:600px; height:200px;}
 
-/* Стили для десктопных устройств */
-@media (min-width: 768px) {
-  body {
-    background-color: #f2f2f2;
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+   margin-bottom: 10px;
   }
-}
 
-/* Стили для планшетов */
-@media (max-width: 768px) {
-  body {
-    background-color: #e6e6e6;
+  .nav a {
+    flex-basis: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 1.8rem;
   }
-}
 
-/* Стили для смартфонов */
-@media (max-width: 480px) {
-  body {
-    background-color: #cccccc;
-    padding: 10px;
+
+  @media (max-width: 630px) { /* Медиа-запрос для телефонов */
+    .nav a {
+      flex-basis: 50%;
+    }
   }
-}
+
+  @media (min-width: 630px) and (max-width: 1024px) { /* Медиа-запрос для планшетов */
+    .nav a {
+      flex-basis: 45%;
+    }
+  }
+
+  @media (min-width: 1025px) { /* Медиа-запрос для компьютеров */
+    .nav a {
+      flex-basis: auto;
+    }
+  }
+  }
