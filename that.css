@@ -50,7 +50,7 @@ nav {
     font-size: 18px;
     margin-right: 1px;
   }
-   #comment {width:370px; height:100px;}
+   #comment {width:360px; height:100px;}
 }
 @media (max-width: 375px) {
   nav a {
