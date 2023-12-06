@@ -106,6 +106,7 @@ nav {
     display: block;
     margin-bottom: 10px;
     width: 100%;
+    margin-right: 1px;
   }
  table { background-size: 100%;
         background-repeat:repeat-y}
